@@ -141,6 +141,17 @@
 
     .frame-wrap { position: absolute; inset: var(--bar-h) 0 0 0; background: #0b0d10; }
     iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+
+    @media (max-width: 640px) {
+      .bar { gap: 8px; padding: 0 10px; }
+      .dd { flex: 1 1 auto; min-width: 0; }
+      .dd-trigger { min-width: 0; width: 100%; overflow: hidden; }
+      .dd-trigger .cur-tag { display: none; }
+      .dd-trigger .cur-title { overflow: hidden; text-overflow: ellipsis; }
+      .icon-btn.with-text { width: 36px; padding: 0; }
+      .icon-btn.with-text span { display: none; }
+      .dd-menu { width: min(340px, calc(100vw - 20px)); }
+    }
   </style>
 </head>
 <body>
